@@ -17,12 +17,11 @@ class Ruc{
         return  dataRUC        
     }
 
-    rellenar(mioo){
-        document.getElementById("mioo").value = mioo.ruc;
-        document.getElementById("razon").value = mioo.razonSocial;
-        document.getElementById("direccionn").value = mioo.direccion;
-        document.getElementById("estado").value = mioo.estado;
-
+    fillFields(data){
+        document.getElementById("mioo").value = data.ruc;
+        document.getElementById("razon").value = data.razonSocial;
+        document.getElementById("direccionn").value = data.direccion;
+        document.getElementById("estado").value = data.estado;
     }
 
     mostrarAlerta(mensaje, clases){
