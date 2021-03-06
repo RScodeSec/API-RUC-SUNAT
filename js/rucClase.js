@@ -1,5 +1,4 @@
-class Ruc{   
-
+class Ruc{ 
     async getRUC(numberRUC) {
         /* this data obtain of this website: apisperu.com*/
         const url = 'https://dniruc.apisperu.com/api/v1/ruc/';
@@ -14,7 +13,9 @@ class Ruc{
         const responseRUC = await fetch(consultData)
         
         const dataRUC = await responseRUC.json();
-        return  dataRUC        
+        return  dataRUC
+        
+                
     }
 
     fillFields(data){
@@ -22,6 +23,12 @@ class Ruc{
         document.getElementById("razon").value = data.razonSocial;
         document.getElementById("direccionn").value = data.direccion;
         document.getElementById("estado").value = data.estado;
+    }
+    clearFields(){
+        document.getElementById("mioo").value ="";
+        document.getElementById("razon").value = "";
+        document.getElementById("direccionn").value ="";
+        document.getElementById("estado").value ="";
     }
 
     mostrarAlerta(mensaje, clases){

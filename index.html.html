@@ -29,22 +29,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <div class="form-group" id="ingreso-ruc">
-                        <label for="" class="form-label h5">Ingresa RUC</label>
-                        <input type="text" name="" id="ruc" class="form-control" value="20513873922" placeholder="Ingresa ruc"
-                            aria-describedby="helpId" maxlength="11"  pattern="[0-9]{11}"  >
+                    
+                        <div class="form-group" id="ingreso-ruc">
+                            <label for="" class="form-label h5">Ingresa RUC</label>
+                            <input type="text" name="" id="ruc" class="form-control" value="20513873922" placeholder="Ingresa ruc"
+                                aria-describedby="helpId" maxlength="11"  pattern="[0-9]{11}"  required>
 
-                            <input type="text" id="mioo" class="form-control" placeholder="Ingresa Numero Ruc"  maxlength="31" >
+                                <input type="text" id="mioo" class="form-control" placeholder="Ingresa Numero Ruc"  maxlength="31" >
 
-                            <input type="text" id="razon" class="form-control" placeholder="Ingresa Numbre razonSocial"  maxlength="70" >
-                            <input type="text" id="direccionn" class="form-control" placeholder="Ingresa direccion" maxlength="31"  >
-                            <input type="text" id="estado" class="form-control" placeholder="Estada del ruc" value="INACTIVO"   disabled >
+                                <input type="text" id="razon" class="form-control" placeholder="Ingresa Numbre razonSocial"  maxlength="70" >
+                                <input type="text" id="direccionn" class="form-control" placeholder="Ingresa direccion" maxlength="31"  >
+                                <input type="text" id="estado" class="form-control" placeholder="Estada del ruc" value="INACTIVO"   disabled >
 
 
-                    </div>
+                        </div>
 
-                    <button class="btn btn-primary mb-3" type="submit" id="btnBuscar">Buscar RUC</button>
-
+                        <button class="btn btn-primary mb-3" type="submit" id="btnBuscar">Buscar RUC</button>
+                    
                 </div>
             </div>
 
@@ -59,12 +60,11 @@
     </main>
 
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/rucClase.js"></script>
     <script src="js/ruc.js"></script>
-    <script src="js/a.js"></script>
 </body>
 
 </html>
